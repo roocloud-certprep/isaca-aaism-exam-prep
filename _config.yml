@@ -1,0 +1,43 @@
+# ============================================================
+#  ISACA AAISM Exam Prep — Jekyll / GitHub Pages config
+# ============================================================
+title: "ISACA AAISM Exam Prep"
+tagline: "Advanced in AI Security Management (AAISM) Certification Study Guide"
+description: >-
+  Free, comprehensive study notes and video lessons for the ISACA Advanced in
+  AI Security Management (AAISM) certification. 47 episodes covering AI
+  Governance & Program Management, AI Risk & Opportunity Management, and
+  AI Technologies & Controls — by RooCloud.
+author: "RooCloud"
+lang: en_US
+
+# --- Repository: roocloud-certprep/isaca-aaism-exam-prep ---
+url: "https://roocloud-certprep.github.io"
+baseurl: "/isaca-aaism-exam-prep"
+
+youtube: "https://youtube.com/@roocloud"
+website: "https://roocloud.com"
+logo: "/assets/img/RooCloud.com-Exam-Prep.png"
+twitter_card_type: summary_large_image
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README-build-notes.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

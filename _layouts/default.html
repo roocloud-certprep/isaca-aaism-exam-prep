@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en_US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- assign page_desc = page.description | default: site.description -%}
+  {%- assign page_image = page.image | default: site.logo | absolute_url -%}
+
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc | strip_newlines | escape }}">
+  {%- if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords | escape }}">
+  {%- endif %}
+  <meta name="author" content="{{ page.author | default: site.author }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | strip_newlines | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {%- if page_image %}
+  <meta property="og:image" content="{{ page_image }}">
+  {%- endif %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="{{ site.twitter_card_type | default: 'summary_large_image' }}">
+  <meta name="twitter:title" content="{{ page_title | escape }}">
+  <meta name="twitter:description" content="{{ page_desc | strip_newlines | escape }}">
+  {%- if page_image %}
+  <meta name="twitter:image" content="{{ page_image }}">
+  {%- endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://roocloud-certprep.github.io/" aria-label="RooCloud Exam Prep home">
+        <img src="{{ '/assets/img/RooCloud.com-Exam-Prep.png' | relative_url }}" alt="RooCloud Exam Prep" width="190" height="25" class="site-logo">
+      </a>
+    </div>
+  </header>
+  <main class="container">
+    {{ content }}
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: "%Y" }} RooCloud &middot;
+        <a href="https://roocloud-certprep.github.io/">RooCloud @ GitHub</a> &middot;
+        <a href="{{ site.youtube }}">YouTube</a> &middot;
+        <a href="{{ site.website }}">RooCloud.com</a> &middot;
+        <a href="{{ '/' | relative_url }}">Exam Syllabus</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
