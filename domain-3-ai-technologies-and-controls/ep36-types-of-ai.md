@@ -83,67 +83,25 @@ permalink: /domain-3-ai-technologies-and-controls/ep36-types-of-ai.html
 
 # Types of AI: ANI, AGI, ASI, Generative, Agentic and Machine Learning
 
-You cannot secure or govern a technology you do not understand. This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series builds a clear mental map of the whole AI field: how AI, machine learning, and deep learning nest together, the types of AI by function and by capability, the major model families, how machines actually learn, and the key terms every security professional should know. The payoff is being able to ask the right questions about any system you encounter, judge what a model can and cannot do, and spot where its particular design creates risk. This is the vocabulary the rest of Domain 3 is built on.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series opens Domain 3 by building the mental map of the AI field that the rest of the technical controls work depends on. It frames how the broad concepts of AI, machine learning, and deep learning relate, the functional and capability classifications you are expected to know, the major model families that show up in the enterprise, the way machines actually learn, and the vocabulary every security manager needs.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/9q5dt8uAl-o" title="Types of AI: ANI, AGI, ASI, Generative, Agentic & Machine Learning" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## AI, Machine Learning, Deep Learning, and Generative AI: The Nested Circles
-
-Start by untangling some words that often get muddled. Picture a set of nested circles. The widest is **artificial intelligence**, the broad goal of machines doing tasks that normally need human intelligence. Inside it sits **machine learning**, where systems learn patterns from data instead of being hand-coded. Inside that sits **deep learning**, which uses many-layered networks to learn ever more abstract features. And **generative AI** lives within deep learning, creating brand-new content from the patterns it has absorbed. With that map in mind, there are two ways to categorize AI: by what it can do functionally, and by how capable it is overall. The functional view gives four types, and the capability view gives three. The exam expects you to know both lenses.
-
-## The Four Functional Types of AI
-
-The first two functional types are the simplest. **Reactive machines** respond to the current input with no memory of the past, like a reflex that fires the same way every time it is triggered. **Limited memory** systems go a step further by using recent data to inform decisions, much like a driver glancing at the last few seconds of road and traffic before changing lanes. The vast majority of today's AI sits in this limited-memory category.
-
-The next two functional types are far more advanced and largely aspirational. **Theory of mind** describes a machine that could understand human emotions and intentions, in effect reading the room and adjusting its behavior to people's mental states; we see only early, partial hints of this today. **Self-aware AI**, the final type, would possess consciousness of its own mind and feelings. This does not exist, and remains purely theoretical.
-
-## The Three Capability Tiers: ANI, AGI, and ASI
-
-Now the capability lens, starting with **artificial narrow intelligence, or ANI**. Sometimes called weak AI, this is a system limited to one specific domain, like a tool that only translates languages or only sorts images. Despite the name, narrow AI is enormously useful and is essentially all the AI in use today. It performs its single task with great accuracy but has no awareness or general understanding beyond that narrow lane.
-
-The next step up is **artificial general intelligence, or AGI**, a system that could handle any intellectual task a human can. To qualify, it would need broad capabilities like sensory perception, problem-solving, natural-language understanding, creativity, and social-emotional engagement. Real progress is happening in areas like vision and language, but human-level common sense and fine motor skills remain out of reach, so AGI does not yet exist.
-
-Beyond even that lies **artificial superintelligence, or ASI**, a hypothetical stage where machine intelligence would surpass the best human minds across every field, solving problems and creating innovations beyond our current imagination. It is, for now, purely a concept.
-
-## Major Model Families: Generative, Agentic, and Predictive
-
-Move next to the major model families, beginning with **generative models**. A landmark design here is the **generative adversarial network**, which pits two neural networks against each other. One network generates fake samples while the other tries to tell fakes from real, like a forger and an art authenticator locked in competition. As they train, both improve until the forger's output becomes so convincing the authenticator can no longer tell the difference, which is how these systems learn to produce strikingly realistic images, audio, and more.
-
-A fast-rising family is **agentic AI**, the next evolution beyond simple assistants. An AI agent can make autonomous decisions and take actions to achieve a goal, such as keeping a process running efficiently. Its benefits include greater specialization on granular tasks, easy experimentation, and, thanks to stronger reasoning, fewer hallucinations than ordinary generative AI. But it still needs human oversight, because vague goals lead it badly astray.
-
-Another family is **predictive models**, which use historical data and machine learning to forecast future events and trends, spotting patterns in the past to anticipate what comes next. They power things like equipment-failure prediction and forecasting. The key risk is that decision-makers must genuinely understand how a prediction was derived, so that choices rest on verifiable reasoning rather than blind faith.
-
-## Machine Learning Paradigms: Supervised, Unsupervised, and Reinforcement
-
-At the heart of it all is **machine learning**, where machines learn from data using mathematical models. A crucial concept is the **label**, the known answer a model is trained to predict. Labels are not always easy to get: hand-labeling millions of data points is slow and expensive, some categories are genuinely ambiguous and need expert judgment, and in brand-new domains there may be no known correct answer at all. This challenge shapes which learning approach you choose.
-
-* **Supervised learning** trains on labeled data, like studying with an answer key. It splits into **regression**, which predicts a continuous number such as forecasting next month's energy demand, and **classification**, which sorts items into categories such as judging whether a piece of fruit in a photo is ripe or unripe. Variations like semi-supervised and self-supervised learning help when labels are scarce or costly.
-* **Unsupervised learning** works on raw, unlabeled data with no answer key, finding hidden structure on its own. It does three main things: **clustering** groups similar items together, like sorting a music library by sound without being told the genres; **association rules** uncover relationships between items; and **dimensionality reduction** simplifies data with many variables down to the few that matter most. Its main drawback is weak explainability, so a human in the loop is important.
-* **Reinforcement learning** has an agent learn by trial and error, earning rewards for good actions and penalties for bad ones. Imagine a robotic cleaner gradually discovering the most efficient path through a home by being rewarded for covering more floor. It suits autonomous control, like adaptive intrusion detection, but its independence makes safety and human oversight essential.
-
-## Neural Networks, Deep Learning, and Algorithms
-
-Underpinning much of this are **neural networks**, collections of algorithms loosely inspired by the brain. A network has three kinds of layers: an **input layer** that receives data, one or more **hidden layers** where the real computation and learning happen, and an **output layer** that produces the result, rather like an assembly line transforming raw materials into a finished product. Worth knowing: **feedforward networks** pass information in one direction, suiting tasks like image recognition; **recurrent networks** have loops that handle sequences, suiting language and speech; and **convolutional networks** specialize in grid-like data such as images, detecting edges, textures, and objects. When a network has many layers, it becomes **deep learning**, which can extract features automatically, and an automated technique called **neural architecture search** can even help design the best network, though always with human oversight.
-
-**Algorithms** are the step-by-step rules that power all of this. In machine learning, algorithms let models analyze data, find patterns, and make predictions, and each comes with **hyperparameters**, the dials you set before training to tune how it learns, such as the learning rate. Algorithms fall into classes matched to the learning paradigms: supervised ones like linear and logistic regression, decision trees, and support vector machines; unsupervised ones like clustering and principal component analysis; and reinforcement ones like Q-learning. Choosing the right class matters as much as tuning it, and **ensemble modeling**, which combines several models, can improve accuracy and reduce the weaknesses of any single one.
-
-## Essential Vocabulary: LLMs, Transformers, Drift, and AI as a Service
-
-A handful of terms round out your vocabulary. A **large language model** is trained on huge amounts of text using a transformer architecture to understand and generate human-like language. A **prompt** is the input that triggers a generative system, and output quality depends heavily on how specific that prompt is. **Foundation models** are broadly trained and adaptable to many tasks. And **transformers** use a mechanism called **attention** to weigh relationships in data efficiently.
-
-A few more matter for risk. **Natural language processing** lets computers understand and generate human language, and **sentiment analysis** uses it to judge whether text is positive, negative, or neutral. **Underfitting** means a model is too simple to capture the patterns, while **overfitting** means it memorized the training data, including the noise, and fails on anything new. And **AI as a service** lets organizations subscribe to AI tools in the cloud without seeing how the model was built, which is convenient but carries its own hidden risk.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* AI contains machine learning, which contains deep learning, which contains generative AI as a set of nested circles.
-* AI is categorized functionally as reactive, limited memory, theory of mind, and self-aware, and by capability as ANI, AGI, and ASI, with only narrow AI in use today.
-* Model families include generative (such as GANs), agentic, and predictive, each carrying distinct risks and benefits.
-* Machines learn through three paradigms: supervised, unsupervised, and reinforcement, often powered by neural networks and deep learning.
-* Key terms like large language models, transformers, prompts, hyperparameters, overfitting, underfitting, and AI as a service complete the foundational vocabulary every AAISM candidate needs.
+* How **AI, machine learning, deep learning, and generative AI** nest together as a set of progressively narrower circles.
+* The **four functional types** of AI — reactive, limited memory, theory of mind, and self-aware.
+* The **three capability tiers** — artificial narrow, general, and super intelligence.
+* The major **model families** including generative, agentic, and predictive models, and their distinctive risks.
+* The three **machine learning paradigms** — supervised, unsupervised, and reinforcement learning — and where each fits.
+* **Neural networks, deep learning, and algorithms**, including layers, hyperparameters, and ensemble modeling.
+* Essential vocabulary including **large language models, transformers, prompts, drift, overfitting, underfitting, and AI as a service**.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

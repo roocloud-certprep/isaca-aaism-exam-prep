@@ -75,74 +75,26 @@ permalink: /domain-2-ai-risk-and-opportunity-management/ep27-threat-modeling.htm
 
 # AI Threat Modeling Explained
 
-**Threat modeling** is how you think like an attacker before an attacker thinks like you. This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series explores what AI threat modeling is, the questions it answers about attackers, and the established methods you can apply — including newer ones like **MAESTRO** built specifically for AI. By the end you will be able to anticipate how someone might abuse an AI system, choose controls that defend against more than one threat at once, and build the proactive defenses that stop incidents before they start.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series explores how to think like an attacker before an attacker thinks like you. It covers what AI threat modeling actually is, the questions it answers about adversaries, and the established methods you can apply — including newer ones built specifically for AI. By the end you will be able to anticipate how someone might abuse an AI system, choose controls that defend against more than one threat at once, and build the proactive defenses that stop incidents before they start.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/zXJyLBlJC3o" title="AI Threat Modeling Explained" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## What AI Threat Modeling Really Is
-
-**Threat modeling is a key part of risk analysis**, and it begins by identifying the various actors who might threaten a given system — without necessarily pinning down exactly who they are. The point is not to name a specific attacker; the point is to understand the kinds of attackers your system might face, so you can design defenses that match their capabilities and motives.
-
-A practical insight is that **one control often defends against several threats at once**. A measure that blocks a well-resourced state-backed attacker may also stop an ordinary criminal, and noting that overlap makes your threat model more efficient. Instead of chasing every threat with a separate control, you find the controls that quietly cover several at the same time and prioritize those.
-
-## The Three Things Threat Modeling Does
-
-At its core, threat modeling does three things, and any method worth using delivers all three:
-
-1. **It creates a simplified abstraction of the system**, so the team can reason about it without drowning in detail.
-2. **It profiles the attackers**, including their goals, methods, and skills, so the defenses can be matched to realistic adversaries.
-3. **It builds a catalog of the potential threats**, providing a structured view of what could go wrong.
-
-From there, it answers practical questions about each adversary. How often would they encounter the target? How likely are they to be detected? What is the target worth to them? What skills and resources would they need? And how much effort does the whole attack demand? These questions transform a vague worry about "hackers" into a clear-eyed view of which adversaries actually matter and how hard they would have to work to succeed.
-
-## The Established Threat Modeling Methods
-
-There is **no single best method** for threat modeling, so teams often combine several, since each has strengths and blind spots. Knowing which method fits which need is a favorite exam theme and a genuinely useful professional skill.
-
-### STRIDE, PASTA, and LINDDUN
-
-* **STRIDE** is the most mature and easy to apply, naming six threat types from spoofing to elevation of privilege. Its weakness is that it struggles with AI-specific issues like adversarial machine learning, which simply did not exist when it was designed.
-* **PASTA** is a process-driven approach that ties closely to risk management and prioritizes threats by business impact. Its weakness is that it is laborious — comprehensive but slow.
-* **LINDDUN** focuses specifically on privacy concerns, making it the natural fit when personal data is the dominant risk.
-
-### Trike, VAST, OCTAVE, and MAESTRO
-
-* **Trike** integrates risk assessment with structured modeling but suffers from thin documentation, which limits adoption.
-* **VAST** is **visual, agile, and scalable**, fitting the iterative way AI is built today. Where development is continuous, a heavy waterfall method gets in the way; VAST keeps up.
-* **OCTAVE** centers on identifying critical assets and the operational context around them, making it strong for asset-led organizations.
-* **MAESTRO** is a newer model built specifically for AI, addressing **multi-agent environments, adversarial machine learning, and AI autonomy** that the older methods miss. It is the most direct answer to the limitations the other methods reveal when applied to modern AI systems.
-
-The right approach for most teams is not "pick one" but "combine carefully." A privacy-heavy system might use LINDDUN and STRIDE together; an AI agent system might pair MAESTRO with PASTA's business-impact discipline.
-
-## Two Themes That Tie It All Together
-
-Two important themes shape how AI threat modeling is actually used in practice.
-
-### Adapt Methods to Cover Ethics, Privacy, and Human Rights
-
-First, **traditional threat modeling rarely considers ethics, privacy, and human rights**, so for AI you must **deliberately adapt your chosen method** to include them. The classic methods were built to defend confidentiality, integrity, and availability, and they handle those concerns well. But AI risk reaches further into territory those methods were never designed for. If you do not explicitly inject ethics, privacy, and rights into the modeling exercise, the threat model will quietly miss the very risks that get the organization onto the front page.
-
-### AI Is Being Used to Assist Threat Modeling Itself
-
-Second, **AI itself is increasingly used to assist the threat-modeling process**, with tools that help teams generate risk and threat scenarios from these established frameworks. This is one of the rare places where AI helps to defend against AI. Used well, it accelerates a previously slow exercise and helps surface scenarios humans might miss; used carelessly, it produces plausible but shallow models, so the AI assistance still needs human judgment to be trustworthy.
-
-## Bringing AI Threat Modeling All Together
-
-The whole picture comes together cleanly. **Threat modeling abstracts the system, profiles attackers, and catalogs threats**, while answering key questions about each adversary's effort and reward. A range of methods exists, from the mature **STRIDE** and risk-driven **PASTA** to privacy-focused **LINDDUN** and the AI-specific **MAESTRO**, and they are best combined. Above all, **adapt them to cover ethics, privacy, and human rights**, which traditional models overlook.
-
-For the AAISM candidate, the exam-ready instinct is to recall which method fits which scenario at a moment's notice. Privacy-led risk points to LINDDUN. Iterative AI development points to VAST. Multi-agent or adversarial machine-learning concerns point to MAESTRO. Business-impact prioritization points to PASTA. Maturity and breadth point to STRIDE. Asset focus points to OCTAVE. Knowing these mappings — and knowing why each has a blind spot — is what separates a confident security manager from one who guesses.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* Threat modeling abstracts the system, profiles attackers, and builds a catalog of potential threats, then answers practical questions about adversary effort and reward.
-* One control often defends against several threats at once, and noting that overlap makes a threat model more efficient.
-* No single method is best — combine them, since each has strengths and blind spots.
-* STRIDE is mature but struggles with adversarial ML; PASTA is risk-driven but laborious; LINDDUN focuses on privacy; Trike, VAST, and OCTAVE fill other niches; and MAESTRO is built specifically for AI's multi-agent and autonomous challenges.
-* Traditional threat modeling rarely covers ethics, privacy, and human rights, so AI threat modeling must deliberately adapt the chosen method to include them, and AI itself can assist the process.
+* **What AI threat modeling really is** — and why it focuses on kinds of attackers rather than specific names.
+* **Control overlap** — why one control often defends against several threats at once.
+* **The three things threat modeling does** — abstract the system, profile attackers, and catalog threats.
+* **The adversary questions** that turn vague worry into prioritized defense.
+* **STRIDE, PASTA, and LINDDUN** — the mature, risk-driven, and privacy-focused workhorses.
+* **Trike, VAST, OCTAVE, and MAESTRO** — niche methods plus the newer AI-specific option for multi-agent and adversarial ML risk.
+* **Adapting methods for ethics, privacy, and human rights** that traditional models overlook.
+* **AI assisting threat modeling itself** — accelerating the exercise while still needing human judgment.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

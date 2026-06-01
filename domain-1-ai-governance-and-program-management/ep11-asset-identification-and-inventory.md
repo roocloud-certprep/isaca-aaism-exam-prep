@@ -83,92 +83,26 @@ permalink: /domain-1-ai-governance-and-program-management/ep11-asset-identificat
 
 # AI Asset Identification and Inventory: Methods and Documentation
 
-You cannot secure or govern something you do not know exists. This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series looks at why AI assets are unlike ordinary technology assets, how to discover and inventory them, the methods used to gather that information, and the documentation that keeps it all reliable. Building a solid **AI asset inventory** is what lets an organization find the unofficial tools quietly in use, assign clear owners, and bring everything under proper oversight — and in your own role, it is the first practical step before any AI risk can be managed at all.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series starts from a simple truth: you cannot secure or govern something you do not know exists. It examines why AI assets behave unlike ordinary technology, how to discover them, the methods used to gather inventory data, and the documentation that keeps the picture accurate over time. The goal is to give you the foundation every AI risk management effort depends on.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/6587IzimtRo" title="AI Asset Identification & Inventory: Methods & Documentation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Why AI Assets Are Special
-
-A whole security program really begins with knowing exactly which AI tools, **algorithms**, **models**, and **data** are in play, and that demands good inventories and strong data governance. An AI solution is not a single, tidy application sitting on your desktop.
-
-Instead, picture a living organism with many organs. One AI solution may have:
-
-* Several **owners**.
-* Multiple **models and versions**.
-* Many **datasets** for training and production.
-* Several **algorithms**.
-* Its own **development life cycle**.
-* **Third-party components**.
-* Separate **licenses**.
-* A web of **legal and regulatory duties**.
-
-Because of that complexity, discovering AI assets — both inside and at the edges of the organization — takes a structured, **cross-functional effort** that pulls together **governance, risk, technology operations, and audit**.
-
-## Who Should Lead the Inventory
-
-One important rule sits at the heart of this: **internal audit should not lead this effort**. The team that owns AI or data management should run it, leaving audit to check the work independently. This separation preserves audit's role as an objective reviewer rather than a participant in the work it later judges.
-
-A good starting point is the **AI usage policy**, since much of the groundwork may already be there — approved tools, prohibited tools, and known owners. The inventory should be refreshed **at least once a year**, and organizations that build their own AI should also maintain a dedicated **catalog of their models**.
-
-## Objectives: Identify, Never Punish
-
-The inventory should be modeled on the organization's existing technology asset inventories, using similar processes. Its purpose is simply to identify the AI in use — **never to punish** the departments or employees using it.
-
-That distinction matters enormously. The organization should communicate clearly that disclosing AI use supports better governance, collaboration, and security, and that no one will be reprimanded for being honest. Without that reassurance, people hide their tools, and the inventory fails before it starts. A culture of safe disclosure is the single biggest predictor of whether the inventory captures reality or merely reflects what was already known.
-
-## Gathering Methods
-
-### Internally Built AI
-For AI the organization built itself, a baseline is fairly easy to assemble by reviewing **change, deployment, release, and project documents**. Technology and security teams can also use discovery aids such as **data-flow diagrams**, **metadata**, and the systems that manage user access.
-
-### Fresh Baseline: Four Essential Ingredients
-When building a fresh baseline, four ingredients are essential:
-
-1. **Collaboration** across business and technical teams.
-2. **Discovery tooling** to detect AI usage automatically.
-3. **Surveys** to reach broadly across the organization.
-4. **Interviews** for depth and nuance.
-
-### Standard Fields
-To keep the data clean and consistent, agree on a standard set of fields up front, capturing things like the tool's **name, version, license, cost, deployment method, purpose, frequency of use, stakeholders, accountable owner, and any third-party involvement**. Consistent fields turn a pile of survey responses into a usable asset register.
-
-## Surveys: Efficient but Tricky
-
-Surveys deserve a closer look, because they are an efficient way to collect a baseline. A degree of anonymity encourages honest answers, especially when people know they will not be disciplined for what they say.
-
-But there is a trade-off. **Complete anonymity** can actually reduce accountability, because nobody feels obliged to finish the survey, so the sweet spot is somewhere in between — enough anonymity to protect honesty, enough attribution to drive completion. **Quantifiable, structured questions** make a survey far more useful than open-ended ones, because they aggregate cleanly into the inventory rather than producing prose that has to be re-interpreted.
-
-## Interviews: Where Depth Lives
-
-**Interviews** are the other method, and here the questions must be **standardized**, or you end up with incomplete, unusable responses. Fit answers to a predetermined set of options so the results can be aggregated cleanly, because open-ended questions add complexity that is hard to organize.
-
-A skilled interviewer also asks **follow-up questions** to pin down exactly *which* tool and *which* version someone means, and then groups similar answers together. Interviews are only modestly useful for the baseline itself, but they shine when learning how teams are experimenting with AI for **training or development** rather than for **production** — discovering the experimentation that surveys often miss.
-
-## Documentation: What Keeps the Inventory Alive
-
-Finally, documentation ties it all together. Whatever process you follow, several artifacts should be available so an auditor can understand both the **organization's mission for its AI** and the **sustainable processes** that keep the inventory current. These should plug into your standard **asset-management platforms** rather than living as parallel spreadsheets that nobody updates.
-
-Maintaining an AI inventory differs from ordinary asset management because the space changes so fast. New tools land monthly, vendors pivot, and teams adopt and abandon platforms in cycles much shorter than the typical annual review.
-
-## Shadow AI: The Real Prize
-
-The biggest reason for the difference is **shadow AI**, where departments hire and deploy AI tools entirely outside the technology team's view, leaving ownership scattered and unmanaged. Surfacing that hidden activity is exactly why a disciplined inventory matters. Without it, shadow AI quietly accumulates risk — data leaks through unmanaged tools, compliance gaps go unnoticed, and the organization loses sight of where decisions are actually being made.
-
-## Bringing It All Together
-
-AI assets are complex bundles of owners, models, data, and algorithms, so discovering them needs a structured, cross-functional effort that audit checks but does not lead. The inventory exists to **identify, not punish**, and it is built from a baseline using discovery tools, well-designed surveys, and standardized interviews, all captured in consistent fields. Solid documentation keeps it alive, and its real prize is exposing shadow AI before it becomes a risk you only discover during an incident.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* An AI solution is a complex bundle of owners, models, versions, datasets, algorithms, life cycles, third parties, licenses, and legal duties, requiring a cross-functional inventory effort.
-* Internal audit must not lead the inventory; the AI or data management team runs it, with audit independently checking the work, starting from the AI usage policy and refreshing at least annually.
-* The inventory must identify, never punish, and the organization must communicate that disclosure is safe or people will hide their AI tools.
-* Use four ingredients for a fresh baseline (collaboration, discovery tooling, surveys, interviews) and capture standard fields like name, version, license, cost, deployment, purpose, frequency, stakeholders, owner, and third parties.
-* Surveys need balanced anonymity and structured questions; interviews need standardized questions with follow-ups; documentation feeds standard asset-management platforms and the real prize is surfacing shadow AI.
+* **Why AI assets are special** — a single solution can have many owners, models, datasets, algorithms, life cycles, third parties, licenses, and duties.
+* **Who leads the inventory** — the AI or data management team runs it, with internal audit independently checking the work.
+* The **identify-never-punish** principle and why safe disclosure is the single biggest predictor of inventory accuracy.
+* **Gathering methods** — internally built AI baselines plus four essential ingredients for a fresh baseline: collaboration, discovery tooling, surveys, and interviews.
+* **Surveys** — balancing anonymity with accountability and using structured, quantifiable questions.
+* **Interviews** — standardized questions, follow-ups, and where they shine over surveys.
+* **Documentation** that feeds standard asset-management platforms rather than parallel spreadsheets.
+* **Shadow AI** as the real prize the inventory exists to surface before it becomes a hidden risk.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

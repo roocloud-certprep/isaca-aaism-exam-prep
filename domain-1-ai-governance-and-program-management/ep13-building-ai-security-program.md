@@ -83,84 +83,27 @@ permalink: /domain-1-ai-governance-and-program-management/ep13-building-ai-secur
 
 # Building an AI Security Program: Trust but Verify, AI Lead and Audits
 
-Building an AI security program takes a proactive approach and continuous risk management, monitoring, policies, and controls to limit data leakage and misuse. This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series walks through the practical building blocks: trusting but verifying AI output, setting acceptable use policies, appointing an AI lead, running a cost-benefit analysis, adapting your cybersecurity, mandating audits, developing AI ethics, and adapting to AI's effect on society. These are the concrete moves that turn good intentions about AI safety into an actual program — knowing them lets you advocate for the missing pieces before an incident forces the issue.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series walks through the concrete moves that turn good intentions about AI safety into an actual program. It covers the proactive, continuous nature of an AI security program and the practical building blocks every organization should put in place — knowing them lets you advocate for the missing pieces before an incident forces the issue.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/5CJbK01_I3c" title="Building an AI Security Program: Trust but Verify, AI Lead & Audits" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Setting the Scene: A Proactive, Continuous Program
-
-An AI security program is built proactively and continuously, combining risk management, monitoring, policies, and controls to limit data leakage and misuse. Here is an encouraging point: **AI itself can help build the program**, automating routine reviews for organizations without a dedicated security chief, and bringing in a **managed partner** with AI expertise can strengthen defenses without ballooning the budget. The program is not all heavy lift — done well, AI helps secure AI.
-
-## 1. Trust but Verify
-
-The first building block is **trust but verify**. AI can sharpen decisions across many sectors, but a model keeps evolving — especially public third-party systems that draw from vast, unverified sources. Because these platforms are constantly updated, they are also constantly attacked.
-
-Attackers craft **jailbreaks** that slip past a model's rules to force unwanted output, or even slip malicious code into the model itself, and a **major AI provider suffering a data breach is no longer hypothetical**. The lesson is blunt: because AI is so open to manipulation, every output must be validated, which means building real mechanisms to review and approve AI-generated work before it shapes decisions, ships in product, or reaches customers.
-
-## 2. Designing Acceptable Use Policies
-
-The second building block is designing **acceptable use policies (AUPs)**. The organization must clearly establish which uses of AI are approved and which are forbidden, then verify those rules are followed and back them with proper training and education for staff. This connects directly to the acceptable use policy examined earlier in the syllabus, applied here as a **security control** rather than just a governance document. A policy nobody knows or enforces protects no one.
-
-## 3. Designating an AI Lead
-
-The third building block is designating an **AI lead**. A dedicated senior role for AI may eventually be needed, but even now an organization should appoint someone — perhaps an analyst or project manager — to track how AI is evolving and to maintain a plan for the company's changing relationship with these tools.
-
-This lead should work with a **diverse, cross-functional group** spanning **cybersecurity, privacy, legal, procurement, risk, and audit**, and should document the organization's history of AI use to guide future decisions. That documented history becomes invaluable when leadership needs to defend past choices or chart the next phase of adoption.
-
-## 4. Cost-Benefit Analysis
-
-The fourth building block is a **cost-benefit analysis**. Like any security measure, AI carries a real financial burden, so weighing the costs against the benefits — including the **build-versus-buy** decision — is a critical first step.
-
-When you do the maths, remember to count the cost of the **security controls themselves** on one side, and the **productivity gains and workforce optimization** on the other. A tool that seems cheap can become expensive once you secure it properly, while a more expensive tool with stronger controls may prove the better long-term investment.
-
-## 5. Adapting and Creating Cybersecurity Programs
-
-The fifth building block is **adapting and creating cybersecurity programs**, and this should happen **before investing heavily in AI**, with past risk assessments guiding which controls to apply. Several concerns stand out.
-
-### Preventing Intellectual Property Leakage
-Use **access permissions**, **visibility tools**, and **application controls** to stop valuable data walking out the door. AI tools, especially generative ones, can inadvertently exfiltrate IP if guardrails are weak.
-
-### Disaster Recovery, Incident Response, and Continuity
-Plan for disaster recovery, incident response, and continuity that explicitly cover AI scenarios — including the loss or compromise of a model, not just a server.
-
-### Threat Intelligence
-Maintain **threat intelligence** by consulting recognized community sources that track the latest **AI-specific threats**. Generic threat feeds miss the model-specific attack patterns now emerging.
-
-## 6. Mandating Audits and Traceability
-
-The sixth building block is **mandating audits and traceability**, especially around the model, so the organization understands where data came from and how decisions were made. Three questions guide this work:
-
-1. **Where did the source data originate?**
-2. **Has that data been altered, either by the AI or by a person interacting with it?**
-3. **Is systemic bias creeping into the results?**
-
-Being able to answer these is what makes an AI tool **accountable**. Without traceable answers, no one can defend a model's outputs in a regulator's office or a courtroom.
-
-## 7. Developing a Set of AI Ethics
-
-The seventh building block is developing a set of **AI ethics** — a dimension unfamiliar to many security professionals. Useful reference points exist, including the ethics recommendations published by the **United Nations Educational, Scientific and Cultural Organization (UNESCO)**, and the ethical principles adopted by various major technology firms and government bodies. Organizations can draw on these when shaping their own AI policies rather than starting from a blank page.
-
-## 8. Societal Adaptation
-
-The eighth building block is **societal adaptation**, because organizations collectively shape AI's wider impact. A company facing job losses from automation can choose to retrain its people for new roles rather than simply cut them.
-
-The ripples spread further. Educators may need to redesign how they assess students, workplaces may need to rethink performance reviews, and everyone will need to grow wise to **deepfakes**, AI errors, and disinformation. Even **AI hiring tools** must be re-examined, because a flawed one can usher unqualified candidates straight into the organization. These are not side issues — they are part of the security program's surface area, because each one carries real organizational risk if mishandled.
-
-## Bringing It All Together
-
-An AI security program is proactive and continuous, built from eight moves: **trust but verify** every output, **set and enforce acceptable use policies**, **appoint an AI lead**, **run a cost-benefit analysis**, **adapt your cybersecurity** before you invest, **mandate audits and traceability**, **develop a set of AI ethics**, and **help your people and society adapt**. Together these turn AI risk from an open-ended worry into a managed, measurable program.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* An AI security program is proactive and continuous, and AI itself plus managed partners can help build and run it without ballooning the budget.
-* Trust but verify means validating every AI output because models evolve, get jailbroken, and can be compromised including major-provider breaches.
-* The program rests on acceptable use policies as security controls, a designated AI lead working cross-functionally, and a build-versus-buy cost-benefit analysis that counts security cost against productivity gains.
-* Cybersecurity must be adapted before heavy AI investment, focusing on IP leakage prevention, DR/IR/continuity, and AI-specific threat intelligence, alongside audits guided by three traceability questions.
-* AI ethics drawing on UNESCO and industry principles, plus societal adaptation around jobs, education, deepfakes, and hiring tools, complete the eight building blocks.
+* The **proactive, continuous nature** of an AI security program and how AI itself plus managed partners can help build it.
+* **Trust but verify** — why every AI output must be validated against jailbreaks and provider breaches.
+* **Acceptable use policies** applied as security controls, not just governance documents.
+* The **AI lead role** working across cybersecurity, privacy, legal, procurement, risk, and audit.
+* **Cost-benefit analysis** weighing security control costs against productivity gains and the build-versus-buy choice.
+* **Adapting cybersecurity** before investing heavily — IP leakage prevention, DR/IR/continuity, and AI-specific threat intelligence.
+* **Audits and traceability** anchored by three questions about origin, alteration, and systemic bias.
+* **AI ethics** drawing on UNESCO and industry principles.
+* **Societal adaptation** around jobs, education, deepfakes, disinformation, and AI hiring tools.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

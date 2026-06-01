@@ -75,58 +75,24 @@ permalink: /domain-2-ai-risk-and-opportunity-management/ep34-integration-risk.ht
 
 # AI Integration Risk: Legacy Systems and Intellectual Property
 
-AI rarely arrives on a clean slate; it has to fit into the systems and legal realities you already have. This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series looks at the risks of plugging an AI system into your environment, focusing on two big challenges: **integrating with legacy systems**, and **intellectual property concerns**. Understanding integration risk lets you avoid an expensive, stalled rollout against aging systems, and protects you from inheriting someone else's copyright problem.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series tackles integration risk — the exposure created when a new AI capability has to land inside the systems and legal realities an organization already lives with. It frames the two dimensions that consistently derail rollouts: aging technology stacks that resist modern integration, and intellectual property questions that can quietly convert promising AI output into legal exposure.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/tgMSll4bun4" title="AI Integration Risk: Legacy Systems & Intellectual Property" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Legacy Systems: The Reality AI Has to Fit Into
-
-Let's start with **legacy systems**, which are the older systems that have been running for years and are not going away. They are often hard to integrate, poorly suited to AI, and capable of creating or worsening technical problems. Every enterprise of any size carries a layer of these systems, and they cannot be wished away because an AI vendor's slide deck looks compelling. They form the operating reality into which any new AI capability has to be slotted, and ignoring them is the fastest way to a stalled, over-budget rollout.
-
-## Six Questions to Ask Before Integrating with Legacy
-
-To avoid trouble, an organization should work through several questions before committing.
-
-1. **Does using AI here even make sense?** — not every workflow benefits from a model, and the wrong starting use case will undermine confidence in the whole program.
-2. **Can the provider's system actually connect to what you already run, or would it demand a complete overhaul?** — connectivity is rarely a checkbox; it is the line between weeks of work and years of work.
-3. **Is your data good enough, or will it need better governance first?** — if the underlying data is messy, the model's outputs will be too.
-4. **How will the change affect everyone in the existing process?** — every workflow has stakeholders, and unannounced changes provoke resistance.
-5. **Do you understand the true effort, time, and money involved?** — modernizing aging systems is neither easy nor cheap, and tends to uncover hidden technical, privacy, and security debt.
-6. **Will the provider support you across the whole integration?** — confirm this throughout, because a provider that vanishes after sign-off leaves a deployer carrying every surprise alone.
-
-The thread connecting these questions is honesty. Each one resists the temptation to assume that an AI rollout will be cleaner than past technology projects — and AAISM expects security managers to ask them before, not after, the integration begins.
-
-## Intellectual Property: A Real, Not Hypothetical, Risk
-
-The second challenge is **intellectual property**, where the risk is far from hypothetical and can bring real financial, legal, and operational consequences. The root issue is that **AI models are trained on vast amounts of data, often scraped from the public web**. That training data can quietly include copyrighted material, patents, or proprietary research, which means the system's output may not be truly original. An organization could unknowingly fold stolen content into its own products and then face lawsuits, fines, and penalties it never saw coming.
-
-For an audit and risk audience, this is the part of integration that often gets least attention until it is too late. A model that delivers brilliantly on a technical benchmark can still saddle the deployer with infringing output, and the deployer is the party that ships the result to customers.
-
-## Why Copyright Is Murky for Generative AI
-
-**Copyright is genuinely murky for generative AI**, because these systems also learn from what users share with them, so a provider's poorly sourced datasets can turn the output into a liability rather than an asset. The legal landscape is still settling, and that uncertainty itself is a risk: even where infringement is unproven, the cost of defending a claim is real, and the reputational damage from being publicly accused of using stolen material can outlive any court ruling.
-
-## Ownership of AI-Generated Content
-
-And even when the content is legally clean, **ownership must still be nailed down**. Imagine using a vendor's model to generate software code, where the model draws on the vendor's own dataset to do it; **who actually owns the result is genuinely unclear**. The deployer paid for the output, the vendor supplied the model, and the dataset belongs to the vendor — all three could plausibly claim a stake. That is why **ownership provisions belong in the contract**, and why **legal counsel should be consulted before signing any agreement where a vendor's model creates content for you**.
-
-This contract-first posture is the practical takeaway. Integration risk is rarely solved by negotiating after the work has begun; it is solved by drafting the right clauses before anyone signs.
-
-## Bringing It All Together
-
-Integration risk has two main faces. **Legacy systems** are often hard and costly to connect to AI, so weigh fit, data quality, effort, and provider support before committing. And **intellectual property** is a real exposure, because models trained on web-scraped data can produce unoriginal or infringing output, and ownership of AI-generated content is uncertain, so contracts and legal review are essential. You now know how to spot the risks of bringing AI into an existing environment — and how to keep both the technology stack and the legal posture from quietly turning into liabilities.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* AI must fit into the systems and legal realities you already have, so integration risk concentrates on legacy systems and intellectual property.
-* Before committing, ask whether AI even fits the use case, whether it can connect to current systems, whether your data is ready, how people will be affected, what the true cost is, and whether the provider will support you throughout.
-* Modernizing aging systems uncovers hidden technical, privacy, and security debt that can dwarf the original AI investment.
-* AI models trained on web-scraped data can produce output that quietly includes copyrighted material, exposing deployers to lawsuits, fines, and penalties.
-* Even when output is legally clean, ownership of AI-generated content is uncertain, so ownership provisions must be in the contract and legal counsel consulted before signing.
+* Why **legacy systems** form the unavoidable reality every AI integration project must contend with.
+* The set of pre-commitment **questions** an organization should answer before plugging AI into existing systems.
+* How modernization work uncovers hidden **technical, privacy, and security debt** that inflates AI program cost.
+* Why **intellectual property** is a real, not hypothetical, source of financial, legal, and operational risk.
+* The reasons **copyright is genuinely murky** for generative AI trained on web-scraped or user-supplied data.
+* How **ownership of AI-generated content** depends on contract clauses negotiated with legal counsel before signing.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

@@ -75,76 +75,24 @@ permalink: /domain-2-ai-risk-and-opportunity-management/ep33-shared-responsibili
 
 # AI Shared Responsibility Model: Deployer vs. Provider
 
-When something goes wrong with a bought-in AI system, the first question is always: **whose job was that?** This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series unpacks the **AI shared responsibility model**, mirroring the familiar cloud model, and lays out exactly what the deployer owns and what the provider owns. Understanding the model lets you draw those lines clearly in a contract, so nothing critical falls into the gap between provider and deployer.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series introduces the AI shared responsibility model — the framework that splits duties between the organization that builds an AI service and the organization that uses it. It explains why this division mirrors the familiar cloud model, how the contract makes responsibilities enforceable, and the broad categories of work that fall to each party when something inevitably goes wrong with a bought-in AI system.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/kcbdhxP4wOg" title="AI Shared Responsibility Model: Deployer vs. Provider" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## The Cloud Analogy: Why AI Needs Its Own Model
-
-Just as cloud computing has a well-known shared responsibility model, AI has one too. When an organization uses AI services from a provider, both sides must clearly understand and divide the duties between them. Picture **renting a furnished apartment**: the landlord is responsible for the building's structure and wiring, while the tenant is responsible for how they live inside it. Confusion only arises when nobody wrote down who fixes what, which is why these responsibilities must be addressed contractually, with clear expectations for **service levels, incident response, and incident notification**.
-
-For AAISM candidates, the contract is the place this model becomes real. A polished split on a diagram is not enough; the actual duties have to be named, scoped, and enforceable in writing.
-
-## Deployer Duties: Auditing, Data, Identity, Incident Response
-
-Let's take the **deployer's side** first — the consumer of the AI system. Its responsibilities include:
-
-* **Regularly auditing and testing the system's privacy and security controls**, including penetration testing.
-* **Implementing strong data governance**, covering quality, integrity, privacy, and the tracking of where data came from.
-* **Enforcing strong identity and access management** to restrict who reaches the system and its data.
-* **Building, training for, and testing an AI-specific incident response plan**.
-
-These four duties form the operational backbone of a deployer's program. They mirror standard security disciplines but apply them with AI-specific intent: it is not enough to have generic data governance, generic IAM, or a generic incident response plan if the AI use case adds new data flows, new identities, and new failure modes that the original controls were never designed for.
-
-## Deployer Duties Continued: Validation, Supply Chain, Transparency
-
-The deployer's duties continue:
-
-* **Rigorously validate the AI models**, including **adversarial testing** to root out bias and vulnerabilities.
-* **Manage supply chain risk** by vetting the provider's security, financial stability, and reputation, and writing security and notification requirements into the contract.
-* **Ensure transparency**, telling users when they are dealing with AI, choosing explainable models, and monitoring outputs for anomalies.
-
-Transparency belongs on the deployer's side because the deployer is closest to the user. The deployer chooses where the model is exposed, how its outputs are framed, and whether the public is told an AI was involved — none of which the provider can do on the deployer's behalf.
-
-## Provider Duties: Compliance, Data Security, Incident Response
-
-Now the **provider's side** — the entity delivering the AI service. The provider:
-
-* **Holds relevant compliance and audit certifications** against security and privacy standards.
-* **Protects its data security**, guarding training data, **model weights, parameters, logs, and the artifacts created at the moment of inference**.
-* **Runs a robust incident response plan** that coordinates with its subscribers.
-
-Notice the breadth of what the provider must secure: not just the training data, but also the model's weights and parameters, the operational logs, and the inference-time artifacts. Each of these is sensitive in its own right, and each can leak intellectual property, customer data, or attack-relevant detail if mishandled.
-
-## Provider Duties Continued: Responsible Development, Transparency, Vulnerability Management
-
-The provider's duties continue:
-
-* **Develop models responsibly**, adopting an ethics framework, following secure coding practices, and striving for bias-reduced training data.
-* **Provide transparency and explainability** through notifications, tools, and documentation that help customers understand the system.
-* **Manage vulnerabilities proactively**, finding and patching weaknesses before attackers exploit them.
-
-Provider-side transparency is different from deployer-side transparency. The provider's job is to make the deployer's transparency obligations achievable — by supplying the documentation, the explanations, and the tooling that the deployer then surfaces to its own users.
-
-## Pinning It Down in the Contract
-
-The single thread running through both columns is that the model is meaningless until it is written into the contract. Service levels, incident notification times, audit rights, certification requirements, transparency artifacts, and supply-chain disclosure obligations all live or die in the contract's small print. An AI security manager who reviews these clauses early — before deployment and before dependence — is the one who keeps responsibilities from quietly slipping through the cracks.
-
-## Bringing It All Together
-
-The AI shared responsibility model splits duties between **provider and deployer**, much like the cloud model, and must be pinned down in contracts. **Deployers** own auditing, data governance, access control, incident response, model validation, supply chain vetting, and user transparency. **Providers** own compliance certifications, data security, their own incident response, responsible model development, transparency tools, and vulnerability management. You now know exactly who owns what in a shared AI arrangement.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* The AI shared responsibility model mirrors the cloud model and must be encoded in contracts with clear service levels, incident response, and notification clauses.
-* Deployers own auditing and penetration testing, data governance and provenance, identity and access management, and an AI-specific incident response plan.
-* Deployers also own model validation with adversarial testing, supply chain vetting, contract-level security and notification terms, and end-user transparency.
-* Providers own compliance certifications, protection of training data, model weights, parameters, logs, and inference artifacts, plus their own incident response.
-* Providers also own responsible model development with an ethics framework, transparency and explainability tooling, and proactive vulnerability management.
+* Why the **AI shared responsibility model** parallels the cloud model and must live inside the contract, not on a slide.
+* The first set of **deployer duties** covering auditing, data governance, identity and access management, and AI-specific incident response.
+* The second set of **deployer duties** covering model validation, supply chain risk, and end-user transparency.
+* The first set of **provider duties** covering compliance certifications, data security, and the provider's incident response.
+* The second set of **provider duties** covering responsible model development, transparency tooling, and vulnerability management.
+* How **contract clauses** for service levels, notifications, audit rights, and disclosures stop duties from slipping into the gap.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

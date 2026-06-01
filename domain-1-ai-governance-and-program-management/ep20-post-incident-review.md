@@ -75,53 +75,26 @@ permalink: /domain-1-ai-governance-and-program-management/ep20-post-incident-rev
 
 # AI Incident Response — Post-Incident Review and Lessons Learned
 
-This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the fifth and final stage of the AI Incident Response lifecycle: **Post-Incident Review**. It closes the loop after Prepare, Identify and Report, Assess, and Respond. The review is where an organization either grows from a painful event or is doomed to repeat it. Knowing how to run one well lets you turn a single incident into lasting improvements, shifting your organization from constantly reacting to genuinely staying ahead.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the Post-Incident Review phase — the final stage of the AI Incident Response lifecycle. This is where an organization either grows from a painful event or is doomed to repeat it. Knowing how to run a review well lets you turn a single incident into lasting improvements and shift your organization from constantly reacting to genuinely staying ahead of AI threats.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/ZlmLYDoIXFI" title="AI Incident Response — Post-Incident Review & Lessons Learned" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## What a Post-Incident Review Actually Involves
-
-After an AI incident, the team should conduct a **thorough review**, sometimes called a **post-mortem**, to find concrete areas for improvement. Think of it like a flight crew debriefing after a rough landing: the point is not to assign blame, but to examine every system honestly so the next flight is safer. That cultural framing matters, because a review that turns into a search for someone to punish will quickly stop producing the candid information it needs. People hide mistakes when they feel hunted, and the lessons disappear with them.
-
-A good AI post-incident review treats the entire system as the unit of analysis. The data pipeline, the model, the controls, the team's response, the tools, the suppliers, and the governance around it are all on the table. The output is not a verdict — it is a set of changes the organization commits to make.
-
-## The Areas the Review Should Examine
-
-The review should examine several specific areas, each of which can quietly contribute to an AI incident and each of which can be hardened in light of what happened.
-
-### Data Preprocessing
-It looks at **how data was preprocessed**, because the cleanliness and integrity of the data feeding a model directly shape its behaviour. Preprocessing errors and gaps are a frequent root cause of AI incidents and are easy to miss without an explicit check.
-
-### Security Controls and Adversarial Testing
-It asks whether the **security controls held up** during the incident, and whether the **adversarial testing was thorough enough** to have caught the weakness in advance. If the controls were sound but the testing was shallow, the fix is in the testing programme; if the testing was rigorous but a control failed, the fix is in the control set.
-
-### Input and Output Controls, and Output Fairness
-It scrutinizes the **controls on the model's inputs and outputs**, and the **fairness of those outputs**. An AI system that produces biased or harmful results, even when nominally functioning, has failed at the level that matters most to users, regulators, and the organization's reputation.
-
-### The AI Provider's Control Environment
-And it extends to the **AI provider's own control environment and processes**, since the weakness may lie partly with them. With so many AI systems built on third-party models, datasets, and infrastructure, ignoring the provider layer leaves a substantial slice of risk completely unexamined. The review should ask what visibility the organization has into provider controls, what assurances exist, and whether the contractual relationship gives the right to demand evidence when something goes wrong.
-
-## The Shift From Reactive to Proactive
-
-The overarching aim of the review is a **shift in posture**, moving from a **reactive stance** that waits for trouble to a **proactive readiness** that minimizes the impact of any future incident. That shift is what separates an organization that absorbs incidents and learns, from one that lurches from crisis to crisis. Every commitment that comes out of a review — every control added, every testing programme deepened, every provider conversation reopened — should serve that proactive aim.
-
-This forward-looking framing also makes the review more useful to leadership. A report that simply explains what went wrong invites defensiveness. A report that frames the same facts as a list of investments in resilience invites action. The substance is identical; the framing changes the response.
-
-## Bringing It All Together
-
-A **post-incident review** is the disciplined **learning phase** that follows an AI incident. It examines **data preprocessing**, **security controls**, the **depth of adversarial testing**, **input and output controls**, **output fairness**, and even the **AI provider's control environment**, all with the goal of moving the organization from reacting to incidents toward **proactively preventing** them. Done well, it converts a single bad event into compounding improvements that pay back over every incident that follows — and that is the entire point of the AI Incident Response lifecycle.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* A post-incident review, or post-mortem, is the disciplined learning phase that follows an AI incident.
-* The aim is improvement, not blame — think of it as a flight crew debrief after a rough landing.
-* The review examines data preprocessing, security controls, depth of adversarial testing, input and output controls, output fairness, and the AI provider's control environment.
-* Including the provider layer matters because the weakness may lie partly with them.
-* The overarching aim is to shift the organization from a reactive stance to proactive readiness that minimizes the impact of future incidents.
+* **What a post-incident review involves** — the disciplined learning phase that follows an AI incident.
+* **Improvement over blame** — the cultural framing that keeps the review honest and useful.
+* **The whole-system lens** — treating data, model, controls, team, suppliers, and governance as the unit of analysis.
+* **Data preprocessing review** — why pipeline cleanliness is a frequent root cause.
+* **Security controls and adversarial testing review** — distinguishing a control failure from a testing gap.
+* **Input and output controls plus output fairness** — checking what reaches users and regulators.
+* **The AI provider's control environment** — extending the review to the third-party layer.
+* **The reactive-to-proactive shift** — the overarching aim that turns incidents into lasting investment in resilience.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

@@ -75,65 +75,25 @@ permalink: /domain-1-ai-governance-and-program-management/ep19-incident-response
 
 # AI Incident Response — Respond: Containment, Eradication and Recovery
 
-This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the fourth stage of the AI Incident Response lifecycle: **Respond**. It sits between Assess and Post-Incident Review, and it is where the team actually stops the bleeding, removes the threat, and brings a system back safely. Responding to an AI incident is genuinely different, and applying old playbooks blindly can fail. Knowing the AI-specific techniques for each step lets you do the real work, rather than assuming a familiar fix will work.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the Respond phase of the AI Incident Response lifecycle — where the team actually stops the bleeding, removes the threat, and brings a system back safely. Responding to an AI incident is genuinely different, and applying old playbooks blindly can fail. Knowing the AI-specific techniques for each step is what lets you do the real work rather than assume a familiar fix will work.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/M8FyIHm4oBI" title="AI Incident Response — Respond: Containment, Eradication & Recovery" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## The Three Steps Still Apply — But With New Difficulty
-
-The conventional strategies of **contain**, **eradicate**, and **recover** still apply to AI, but they are often far less effective, because AI is **complex and probabilistic**, so there is rarely a single clean fix. With ordinary software you can usually find the broken line of code and patch it. With AI, the "flaw" may live in a 100-billion-parameter model whose behaviour cannot be edited so neatly, and the response has to plan around that reality from the very first decision.
-
-## Step One: Containment
-
-The first step is **containment**, stopping the incident from spreading. The right action depends on the situation, and **anything threatening human life or safety demands immediate action** — that priority overrides everything else. Isolating or disabling a piece of AI functionality can be surprisingly hard given the tangled nature of these systems, but the techniques vary by attack.
-
-### Prompt Injection Containment
-For **prompt injection**, you deploy **input and output validation** and **fixed prompt templates** to screen out abusive prompts and shield the model. The validation acts as a filter; the fixed templates limit how much an attacker can warp the conversation.
-
-### Data Poisoning Containment
-For **data poisoning**, you **revoke access** to the datasets and to the scripts that preprocess them, cutting off further contamination. The longer poisoned data continues to flow, the worse the situation becomes, so cutting the supply line fast is paramount.
-
-### Adversarial Inference Containment
-For **adversarial inference**, since the attacker uses legitimate input channels, you **throttle, validate, and sanitize** those inputs to slow systematic probing. You cannot block the channel without blocking real users, so the answer is rate-limiting and filtering rather than shutdown.
-
-## Step Two: Eradication
-
-The second step is **eradication**, removing the threat entirely, and this is where AI gets especially difficult. In ordinary software you patch a flaw or change stolen credentials, but AI fixes run deeper.
-
-### Eradicating Prompt Injection
-For **prompt injection**, the model may need **retraining or fine-tuning** to resist it. That can be impractical and costly for large models, so input and output controls remain vital long-term defences. In other words, even after the model is hardened, the guardrails around it should stay in place.
-
-### Eradicating Data Poisoning
-For **data poisoning**, the poisoned data must be **isolated and removed**, and a **clean version of the model retrained**. While retraining is in flight, **output sanitization** acts as a short-term stopgap so the impaired model does not continue to do harm to downstream users.
-
-### Eradicating Adversarial Inference
-For **adversarial inference**, the answer is making the model **more robust and resilient**. Techniques that improve robustness help harden the model against future probing, even though no measure can eliminate the underlying possibility of inference attacks against any deployed system.
-
-## Step Three: Recovery
-
-The third step is **recovery**, returning the system to a safe, operational state once the threat is contained and eradicated. Here the episode is refreshingly honest: **some AI attacks cannot be fully eradicated.** The best outcome is therefore to:
-
-* **Shrink the attack surface** to prevent a relapse.
-* **Actively monitor** for any lingering threat.
-* **Keep improving the model's robustness** over time.
-
-In practice that means **tightening access controls** and **adding new guardrails**, then **validating those new controls** after the incident and **getting sign-off from all relevant stakeholders** before the AI is switched back on. The reactivation decision is not just a technical one; it is a governance one, and the documentation that surrounds it protects the organization if the same threat resurfaces.
-
-## Bringing It All Together
-
-Responding to an AI incident still follows the familiar arc of **contain, eradicate, and recover**, but each step needs AI-specific handling. **Containment** uses input validation, access revocation, and throttling depending on the attack. **Eradication** may require costly retraining and robustness techniques, not just a quick patch. And **recovery** accepts that some threats persist, so it shrinks the attack surface, adds guardrails, and validates everything before reactivation. The exam — and the real world — rewards teams that know which technique fits which attack and resist the temptation to default to a traditional playbook.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* The classic contain, eradicate, recover model still applies to AI, but each step is harder because AI is complex and probabilistic.
-* Containment techniques are attack-specific: input and output validation plus fixed templates for prompt injection, access revocation for data poisoning, and throttling and sanitization for adversarial inference.
-* Eradication for AI often requires retraining or fine-tuning rather than a quick patch, with input and output controls as vital long-term defences.
-* For data poisoning, isolate and remove the bad data and retrain a clean model, using output sanitization as a short-term stopgap.
-* Recovery accepts some threats cannot be fully eradicated, so the focus shifts to shrinking the attack surface, adding guardrails, validating new controls, and obtaining stakeholder sign-off before reactivation.
+* **The three-step response model** — why contain, eradicate, and recover still apply but are harder for AI.
+* **Containment** — the goal of stopping spread, with safety-of-life always taking priority.
+* **Attack-specific containment techniques** for prompt injection, data poisoning, and adversarial inference.
+* **Eradication** — why removing an AI threat often runs deeper than a software patch.
+* **Retraining, fine-tuning, and isolation** as the levers for fully eradicating an AI threat.
+* **Recovery** — restoring safe operation when some threats cannot be fully eliminated.
+* **Reactivation governance** — tightening controls, adding guardrails, and getting stakeholder sign-off before switching the AI back on.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

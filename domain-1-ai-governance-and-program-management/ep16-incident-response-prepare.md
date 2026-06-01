@@ -75,74 +75,25 @@ permalink: /domain-1-ai-governance-and-program-management/ep16-incident-response
 
 # AI Incident Response — Prepare: IR Team and Tabletop Exercises
 
-This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series opens a five-part AI Incident Response sub-series and covers the very first stage of the IR lifecycle: **Prepare**. The remaining stages — Identify and Report, Assess, Respond, and Post-Incident Review — only work if this foundation is solid. When an AI system goes wrong, the speed and quality of your preparation decide how much damage is done, and knowing how to ready an organization for an AI incident lets you make sure the right people, plans, and practice are in place before a crisis, rather than improvising in the middle of one.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series opens a five-part AI Incident Response sub-series with the **Prepare** phase — the readiness work that decides how much damage gets done when an AI system goes wrong. It covers why AI needs its own IR approach, the AI-specific incidents you must plan for, how to expand the IR team, and why tabletop exercises must be rehearsed differently.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/paf2aPLnd3A" title="AI Incident Response — Prepare: IR Team & Tabletop Exercises" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Why AI Needs Its Own Incident Response Approach
-
-As AI gets woven into critical operations, it faces threats that ordinary systems do not, and the goal of **incident response** is to identify, contain, and prevent those threats while keeping the system reliable, secure, and ethical. An **incident management program** exists to spot events that deviate from normal operations and decide how to respond, so the organization recovers quickly and limits the cost. The simple rule: the faster you can identify, analyze, respond, and recover, the smaller the impact.
-
-AI incident response should still follow a structured approach consistent with established incident-management standards like the **ISO 27035 process**, but it must be tailored to the threats AI specifically faces. Borrowing a traditional playbook wholesale will leave gaps that attackers, and ordinary failures, can drive a truck through.
-
-## AI-Specific Incidents You Must Prepare For
-
-It helps to name the AI-specific incidents you are preparing for so the rest of the plan can be designed around them:
-
-* **Adversarial attacks** tweak the input to fool a model into a wrong decision.
-* **Data poisoning** slips harmful or biased data into the training set to corrupt outputs.
-* **Bias exploitation** abuses a model's built-in bias to produce unfair results.
-* **Model drift** is the slow decay of accuracy as the world changes.
-* **Unauthorized access** means breaking in to manipulate the system or steal information.
-* **Automation failures** are errors in AI-driven automation that lead to wrong or dangerous outcomes.
-
-Each of these has its own detection signals, its own containment moves, and its own recovery path. A plan that lumps them together with generic IT incidents will miss the nuances that matter most.
-
-## Policies, Procedures, and AI-Ready Documentation
-
-The first pillar of Prepare is **policies, procedures, and documentation**. Many organizations already have an incident response plan, but most have not adapted it for AI incidents such as **harmful AI output**, **leakage of confidential data from the training set**, or **biased and hallucinated predictions**. An AI-ready plan must address this extra, unique risk and the way it impacts people, not just systems.
-
-A practical tip stands out here: the debate about whether and how to use AI should happen well before an active incident, not during one. Trying to relitigate AI policy in the middle of a crisis wastes precious time and breeds confusion. Equally important is **thorough documentation**. Artifacts like **model cards** help investigators interpret a model's architecture, training data, and decisions when something goes wrong. Pair this with a clear **communication and escalation plan** so everyone knows who to call, what to say, and when.
-
-## The Expanded AI Incident Response Team
-
-The second pillar is the **incident response team**, which for AI must reach beyond the usual cybersecurity responders. An AI incident is easy to misread without the right voices in the room, and four additional roles are essential.
-
-### Data Stewards
-The team needs **data stewards** who know the training dataset intimately. They can quickly tell whether something looks tampered with or merely unusual.
-
-### Data Engineers and Scientists
-It needs **data engineers and scientists** who can interpret strange model behavior, distinguishing a genuine attack from an oddity of statistics or a known weakness in the architecture.
-
-### Privacy Experts
-It needs **privacy experts** who understand the impact on personal data and the relevant regulations, which often dictate notification timelines and response priorities.
-
-### AI Ethicists
-And it needs **AI ethicists** responsible for the safe and ethical use of the system. They help judge whether a response would itself cause harm and ensure decisions hold up to outside scrutiny.
-
-Without these specialists alongside traditional responders, even a well-rehearsed team can pull the wrong levers when an AI system misbehaves.
-
-## AI Tabletop Exercises: Practising the Right Moves
-
-The third pillar is **tabletop exercises** — practice runs of an incident — and they must be adapted for AI. The skills differ sharply from ordinary forensics. Investigating a poisoned model, for example, requires access to a copy of the very **data lake that was contaminated**, plus close teamwork between responders and the **data science team** to hunt for tampering.
-
-So rehearse the AI-specific moves: exploring a dataset for signs of poisoning, analyzing the model's inputs and outputs for anomalies, and triaging cases where the wrong output looks plausible. A team that has practised these is far more effective when a real incident strikes, because the muscle memory is already there. Tabletop exercises also expose gaps in tooling, in escalation paths, and in the assumptions that quietly underpin every IR plan, all in the safety of a simulation rather than in the heat of a live event.
-
-## Bringing It All Together
-
-AI faces unique incidents, from **adversarial attacks** and **data poisoning** through to **drift** and **automation failures**, so preparation must adapt traditional incident response to these threats. That means three concrete things working in concert: **AI-ready policies and rich documentation** such as model cards, **a response team** that adds data, privacy, and ethics expertise to the usual responders, and **tabletop exercises** rehearsed around genuinely AI-specific scenarios. Get these three right and the organization is genuinely ready before the next AI incident hits, instead of inventing the response while the clock runs.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* AI needs its own IR approach because it faces threats ordinary systems do not, including adversarial attacks, data poisoning, bias exploitation, model drift, unauthorized access, and automation failures.
-* AI incident response follows established standards like ISO 27035 but must be tailored to AI-specific risks.
-* Policies and documentation must explicitly cover harmful AI output, training-data leakage, and biased or hallucinated predictions, and the AI debate should happen before incidents, not during them.
-* The AI IR team extends traditional responders with data stewards, data engineers and scientists, privacy experts, and AI ethicists.
-* Tabletop exercises must rehearse AI-specific moves like exploring poisoned datasets and analyzing model inputs and outputs together with the data science team.
+* **Why AI needs its own IR approach** and how established standards like ISO 27035 still apply when tailored.
+* The **AI-specific incidents** to prepare for — adversarial attacks, data poisoning, bias exploitation, model drift, unauthorized access, and automation failures.
+* **Policies, procedures, and documentation** adapted for harmful AI output, training-data leakage, and biased predictions.
+* The role of **model cards** and a clear communication and escalation plan in supporting investigators.
+* The **expanded AI IR team** — data stewards, data engineers and scientists, privacy experts, and AI ethicists alongside traditional responders.
+* **AI tabletop exercises** that rehearse the specific moves of dataset exploration and model input-output analysis.
+* How simulations expose gaps in tooling, escalation paths, and underlying IR assumptions before a real incident.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 

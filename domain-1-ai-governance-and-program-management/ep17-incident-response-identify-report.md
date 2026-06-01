@@ -75,62 +75,26 @@ permalink: /domain-1-ai-governance-and-program-management/ep17-incident-response
 
 # AI Incident Response — Identify and Report
 
-This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the second stage of the AI Incident Response lifecycle: **Identify and Report**. It sits between Prepare and Assess, and it is where threats either surface in time to act, or slip through unnoticed. You cannot respond to what you never noticed, so understanding how to detect an AI incident lets you set sensible **thresholds** for when a wrong answer becomes a real problem, and helps you put the right monitoring in place so threats surface early instead of after the damage is done.
+This episode of the **ISACA Advanced in AI Security Management (AAISM)** exam prep series covers the Identify and Report phase of the AI Incident Response lifecycle. Because AI systems are probabilistic by design, deciding when a wrong answer crosses the line into a genuine incident is far harder than spotting a traditional system failure. Knowing how to set sensible thresholds and put the right monitoring in place is what makes early detection possible.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/kV02S4t9tdc" title="AI Incident Response — Identify & Report" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-## Why AI Incidents Are Uniquely Hard to Detect
-
-The core challenge is that **AI is built on probability**, which means it is *designed* to be wrong some of the time. Chasing perfect accuracy actually backfires, because an **over-fitted** model performs well on its training data but fails on new data. This creates a genuine puzzle for detection: if some errors are normal and expected, how do you decide which wrong answer counts as an incident?
-
-Defining that **threshold** is what makes detecting AI threats so much harder than detecting a simple system failure. With a traditional system, a service either works or it does not, and the line between healthy and unhealthy is usually crisp. With an AI system, there is a constant trickle of imperfect outputs, and the security team's job is to spot the moment those imperfections cross from acceptable noise into a genuine signal of trouble.
-
-## Observability, Baselines, and Human Judgment
-
-Because outputs are probabilistic, **observability** becomes essential. Observability means the ability to see clearly into how the system is behaving. To make that possible, the organization needs:
-
-* **Clear metrics** that quantify model performance in meaningful ways.
-* **A baseline of normal performance** so deviation is detectable.
-* A combination of techniques, because no single signal is enough.
-
-Some checks can be automated through **observability tools**, but others need a **human in the loop** to judge the subjective, borderline cases that no tool can settle on its own. A borderline output might be technically wrong but harmless, or technically correct but problematic in context — and only a human can render that call reliably. Strong AI incident response weaves the automated and human layers together, rather than relying on either alone.
-
-It also helps to know that **attacks on data are harder to catch than the data-loss incidents security teams are traditionally trained on**, because malicious data can be injected at many points along the pipeline. A poisoned dataset can enter through ingestion, preprocessing, augmentation, or even via a third-party feed, and each injection point demands its own visibility.
-
-## Detection Techniques for Three Common AI Attacks
-
-Three specific attack patterns deserve dedicated detection techniques, and the AAISM exam expects you to be able to pair each attack with its tell-tale signs.
-
-### Prompt Injection
-For **prompt injection**, where hidden instructions are smuggled into input, you sanitize and evaluate inputs and watch for unusual patterns. That includes text full of code-like structure, strange characters, or other signs that someone is trying to slip new instructions into a prompt rather than provide ordinary content. Sanitization screens the input before it ever reaches the model, while pattern monitoring catches the attempts that evade the first layer.
-
-### Data Poisoning
-For **data poisoning**, the detection effort moves upstream into the data pipeline itself:
-
-* **Monitor access and change logs** across the entire data supply chain.
-* **Review preprocessing scripts** for unauthorized edits.
-* **Check dataset versions and their fingerprints** so any tampering shows up immediately.
-
-Because poisoning can be slow and subtle, repeated checks over time matter as much as any single audit.
-
-### Adversarial Inference
-For **adversarial inference**, where an attacker probes a model to reverse-engineer it, you analyze the **interface call logs** and scan for the tell-tale patterns of **systematic testing**. A genuine user asks a handful of varied questions; an attacker probing for a model's internals tends to make many tightly related queries in a short window, varying inputs in suspiciously methodical ways. Recognizing that pattern is the key to spotting inference attacks before they yield enough information to be useful.
-
-## Bringing It All Together
-
-AI incidents are hard to identify because the system is probabilistic and some errors are by design, so the organization must explicitly define a **threshold** for what counts as an incident. **Strong observability**, **clear metrics**, and a **normal baseline** are essential, combined with both **automated tools** and **human judgment** for the borderline cases. And each common attack has its own targeted detection techniques: input sanitization and pattern-watching for prompt injection, change-log and fingerprint monitoring for data poisoning, and call-log analysis for adversarial inference. Put together, these practices let an AI security team surface threats early enough to actually do something about them — which is the whole point of the Identify and Report phase.
-
 <div class="takeaways" markdown="1">
 
-## Key Takeaways
+## What this episode covers
 
-* AI is probabilistic by design, so identifying incidents means defining a clear threshold that separates expected errors from genuine threats.
-* Observability — clear metrics plus a baseline of normal performance — is essential for spotting model drift and emerging attacks.
-* Detection requires both automated tools and human judgment for the borderline cases that automation cannot settle alone.
-* Data attacks are harder to catch than data-loss incidents because malicious data can enter the pipeline at many points.
-* Each attack class has its own detection technique: sanitization and pattern-watching for prompt injection, change logs and fingerprints for data poisoning, and call-log analysis for adversarial inference.
+* **Why AI incidents are uniquely hard to detect** — the probabilistic nature of AI and the over-fitting problem.
+* **Thresholds** — how to separate expected errors from real incidents in a system designed to be imperfect.
+* **Observability** — the metrics and baselines needed to see clearly into AI behavior.
+* **Automated tools and human judgment** — why borderline cases need a human in the loop.
+* **Data-attack visibility** — why malicious data is harder to catch than traditional data-loss incidents.
+* **Detection techniques for prompt injection** — input sanitization and pattern-watching.
+* **Detection techniques for data poisoning** — change logs, preprocessing review, and dataset fingerprinting.
+* **Detection techniques for adversarial inference** — call-log analysis for systematic probing patterns.
+
+Watch the full episode above for the worked examples and detailed explanations of each concept.
 
 </div>
 
