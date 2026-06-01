@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "ISACA AAISM Exam Prep: Free Study Guide & Video Course (47 Lessons)"
-description: "Free ISACA Advanced in AI Security Management (AAISM) study guide. 47 video lessons and detailed notes across AI Governance, AI Risk Management, and AI Technologies & Controls. By RooCloud."
+description: "Free ISACA Advanced in AI Security Management (AAISM) study guide. 47 video lessons paired with concise topic summaries and exam-focused FAQs across AI Governance, AI Risk Management, and AI Technologies & Controls. By RooCloud."
 keywords: "ISACA AAISM, Advanced in AI Security Management, AAISM certification, AAISM exam prep, AI security manager, AI governance, AI risk management, AI security controls, RooCloud"
 author: "RooCloud"
 image: "https://roocloud.com/RooCloud.com-Exam-Prep.png"
@@ -10,7 +10,7 @@ permalink: /README.html
 
 # ISACA AAISM Certification Prep
 
-Welcome to the ultimate free study guide for the **ISACA Advanced in AI Security Management (AAISM)** certification. This repository contains detailed, exam-aligned notes, embedded video lessons, and clear explanations of every concept across all three exam domains. Each of the 47 episodes below pairs a YouTube lesson with an in-depth written article you can read, search, and revise from.
+Welcome to the ultimate free study guide for the **ISACA Advanced in AI Security Management (AAISM)** certification. Every chapter of the syllabus pairs a YouTube video lesson with a concise written summary and an exam-focused FAQ — designed for quick scanning, search and last-minute revision. The 47 episodes below cover all three AAISM exam domains.
 
 New episodes are published on the **[RooCloud YouTube channel](https://youtube.com/@roocloud)**, and you can test yourself with chapter-wise multiple-choice questions and full-length practice exams at **[RooCloud.com](https://roocloud.com)**.
 
